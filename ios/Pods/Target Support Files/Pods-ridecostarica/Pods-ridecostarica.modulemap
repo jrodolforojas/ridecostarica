@@ -1,0 +1,6 @@
+module Pods_ridecostarica {
+  umbrella header "Pods-ridecostarica-umbrella.h"
+
+  export *
+  module * { export * }
+}
