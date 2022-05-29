@@ -1,20 +1,14 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import { HomeNavigator } from './src/navigator/HomeNavigator';
 
 export const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
-    </View>
+    <NavigationContainer>
+      <HomeNavigator/>
+    </NavigationContainer>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
