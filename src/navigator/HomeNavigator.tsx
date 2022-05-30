@@ -3,10 +3,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { CreateRide } from '../screens/homeNavigator/CreateRide'
 import { RideInfo } from '../screens/homeNavigator/RideInfo'
 import { RideList } from '../screens/homeNavigator/RideList'
+import { Ride } from '../interfaces/Ride'
 
 export type HomeStackParams = {
   RideList: undefined,
-  RideInfo: undefined,
+  RideInfo: {ride: Ride},
   CreateRide: undefined
 }
 
